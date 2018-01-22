@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("The number to guess is:")
-        print(game.numberToGuess)
+        print(Guessinggame.numberToGuess)
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         
         // The number to guess it
         print("The number to guess is:")
-        print(game.numberToGuess)
+        print(Guessinggame.numberToGuess)
         
     }
     

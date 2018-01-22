@@ -12,6 +12,7 @@
 		738EC2AD200A5A7000F11A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738EC2AB200A5A7000F11A2F /* Main.storyboard */; };
 		738EC2AF200A5A7000F11A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738EC2AE200A5A7000F11A2F /* Assets.xcassets */; };
 		738EC2B2200A5A7000F11A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738EC2B0200A5A7000F11A2F /* LaunchScreen.storyboard */; };
+		73C5D5A920123B8D009B6223 /* GuessingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C5D5A820123B8D009B6223 /* GuessingGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		738EC2AE200A5A7000F11A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		738EC2B1200A5A7000F11A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		738EC2B3200A5A7000F11A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73C5D5A820123B8D009B6223 /* GuessingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessingGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		738EC2A6200A5A7000F11A2F /* GuessingGame */ = {
 			isa = PBXGroup;
 			children = (
-				738EC2A7200A5A7000F11A2F /* AppDelegate.swift */,
-				738EC2A9200A5A7000F11A2F /* ViewController.swift */,
+				73C5D5A720123B73009B6223 /* New Group1 */,
+				73FF7F0F20123A27006706D0 /* New Group */,
 				738EC2AB200A5A7000F11A2F /* Main.storyboard */,
 				738EC2AE200A5A7000F11A2F /* Assets.xcassets */,
 				738EC2B0200A5A7000F11A2F /* LaunchScreen.storyboard */,
 				738EC2B3200A5A7000F11A2F /* Info.plist */,
 			);
 			path = GuessingGame;
+			sourceTree = "<group>";
+		};
+		73C5D5A720123B73009B6223 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+				738EC2A7200A5A7000F11A2F /* AppDelegate.swift */,
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		73FF7F0F20123A27006706D0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				738EC2A9200A5A7000F11A2F /* ViewController.swift */,
+				73C5D5A820123B8D009B6223 /* GuessingGame.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				738EC2AA200A5A7000F11A2F /* ViewController.swift in Sources */,
+				73C5D5A920123B8D009B6223 /* GuessingGame.swift in Sources */,
 				738EC2A8200A5A7000F11A2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
