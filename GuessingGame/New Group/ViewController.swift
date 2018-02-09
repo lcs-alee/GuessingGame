@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     // MARK: Outlets
     @IBOutlet weak var numberGuessed: UITextField!
+    @IBOutlet weak var labelMessage: UILabel!
     
     // MARK: Properties (variables)
     var game = GuessingGame()
@@ -21,7 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("The number to guess is:")
-        print(Guessinggame.numberToGuess)
+        print(game.numberToGuess)
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,7 +53,10 @@ class ViewController: UIViewController {
         
         // The number to guess it
         print("The number to guess is:")
-        print(Guessinggame.numberToGuess)
+        print(game.numberToGuess)
+        
+        // Compare the numbers
+       labelMessage.text = game.compareGuessMade(providedGuess: integerGiven)
         
     }
     

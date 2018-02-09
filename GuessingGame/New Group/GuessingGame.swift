@@ -11,27 +11,35 @@ import Foundation
 struct GuessingGame {
     
     // MARK: Properties
-    var valueToGuess : Int
+    var numberToGuess : Int
+    var numbersGuessed : [Int]
     
     // MARK: Initializer(s)
     init() {
-        //Generate the random number
-        numberToGuess = Int(arc4random_uniform)
+       numberToGuess = Int(arc4random_uniform(501)) // Generate a number between 0 and 500 (but not 501)
         
+        // make an empty list of number guessed
+        numbersGuessed = []
     }
     
-    // MARK: Functions
-    func checkGuessGiveFeedback(guess : Int) ->String {
-        if guess < numberToGuess {
-        return "Guess higher next time."
-        }else if guess > numberToGuess {
-        return "Guess lower next time."
+    // Cjecls the guess made
+    mutating func compareGuessMade(providedGuess : Int) -> String {
+
+        // Add the provided guess to the list of guesses made
+        numbersGuessed.append(providedGuess)
         
-    }else{
-        retrun "guess correctly"
+        
+        
+        // Compare the provided guess to the random uumber
+        if providedGuess < numberToGuess {
+            return "Guess higher!"
+        } else if providedGuess > numberToGuess {
+            return "Guess lower!"
+        }else {
+            return "Yay! You guessed it!"
         }
-        
+
     }
-    
-    
+
+
 }
